@@ -1,0 +1,15 @@
+name: 01-Test-File-action
+
+on: 
+  workflow_dispatch:
+
+env:
+    AUTHOR_NAME: Mudit Gupta
+
+jobs:
+  HELLO-WORLD: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello World
+        run: |
+          echo $AUTHOR_NAME
